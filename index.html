@@ -66,24 +66,41 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><h1><a class="anchor" id="autotoc_md1"></a>
-Documentation Setup</h1>
+Doxygen - Documentation Setup</h1>
 <p>Skip this if you already have doxygen configured</p><ul>
 <li>Create doxygen config file (Doxyfile). Run <code>doxygen -g</code></li>
 <li>Configure <code>Doxyfile</code><ul>
 <li>Set <code>RECURSIVE</code> to true</li>
-<li>Set Exclude Path and Explude patterns to exclude directories you don't want documented. Typically library codes and plugins come here.</li>
+<li>Set Exclude Path and Exclude patterns to exclude directories you don't want documented. Typically library code and plugins come here.</li>
 </ul>
 </li>
+<li>Optionally add <code>html</code> and <code>latex</code> to <code>.gitignore</code> file</li>
 <li>Document your code according to Doxygen guidlines<ul>
-<li></li>
+<li>Check <code><a class="el" href="main_8c.html" title="This is a &quot;brief&quot; explaination of this file.">src/main.c</a></code> for C style documentation. Output can be seen <a href="https://satu0king.github.io/Github-Documentation-With-Doxygen/main_8c.html">here</a>.</li>
+<li>Check <code><a class="el" href="main_8cpp.html" title="This is a &quot;brief&quot; explaination of this file.">src/main.cpp</a></code> for C++ style documentation. Output can be seen <a href="https://satu0king.github.io/Github-Documentation-With-Doxygen/main_8cpp.html">here</a></li>
+<li>Check <code>src/main.py</code> for Python style documentation. Output can be seen <a href="https://satu0king.github.io/Github-Documentation-With-Doxygen/namespacemain.html">here</a></li>
 </ul>
 </li>
-<li>Run <code>doxygen</code> to generate documentation<ul>
+<li>Optionally run <code>doxygen</code> to generate documentation to see output documentation locally<ul>
 <li>By default web documentation and pdf documentation files are generated in <code>html</code> and <code>latex</code> directories respectively.</li>
 <li>View web documenation at <code>html/index.html</code></li>
-<li>Compile pdf documentation by running <code>make</code> in <code>latex</code> directory </li>
+<li>Compile pdf documentation by running <code>make</code> in <code>latex</code> directory</li>
+<li>Class list can be seen <a href="https://satu0king.github.io/Github-Documentation-With-Doxygen/annotated.html">here</a></li>
 </ul>
 </li>
+</ul>
+<h1><a class="anchor" id="autotoc_md2"></a>
+Configuring automatic publishing using github actions</h1>
+<ul>
+<li>Copy the action file <code>main.yml</code> to <code>.github/workflows/main.yml</code></li>
+<li>Commit and Push to github</li>
+<li>Github action should automatically start running</li>
+<li>Confirm that github is set to deploy <code>gh-pages</code> branch in settings page</li>
+</ul>
+<h1><a class="anchor" id="autotoc_md3"></a>
+Notes</h1>
+<ul>
+<li>Ensure that <code>publish_dir</code> in <code>main.yml</code> is set correctly </li>
 </ul>
 </div></div><!-- PageDoc -->
 </div><!-- contents -->
