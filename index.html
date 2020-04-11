@@ -77,8 +77,9 @@ Doxygen - Documentation Setup</h1>
 </li>
 <li>Create doxygen config file (Doxyfile). Run <code>doxygen -g</code></li>
 <li>Configure <code>Doxyfile</code><ul>
-<li>Set <code>RECURSIVE</code> to true</li>
-<li>Set Exclude Path and Exclude patterns to exclude directories you don't want documented. Typically library code and plugins come here.</li>
+<li>Set <code>RECURSIVE</code> to <code>YES</code></li>
+<li>Set <code>EXCLUDE</code> and <code>EXCLUDE_PATTERNS</code> to exclude directories you don't want documented. Typically library code and plugins come here.</li>
+<li>Set <code>PROJECT_NAME</code> to the name of your project</li>
 </ul>
 </li>
 <li>Optionally add <code>html</code> and <code>latex</code> to <code>.gitignore</code> file</li>
@@ -90,7 +91,7 @@ Doxygen - Documentation Setup</h1>
 </li>
 <li>Optionally run <code>doxygen</code> to generate documentation to see output documentation locally<ul>
 <li>By default web documentation and pdf documentation files are generated in <code>html</code> and <code>latex</code> directories respectively.</li>
-<li>View web documenation at <code>html/index.html</code></li>
+<li>View web documentation at <code>html/index.html</code></li>
 <li>Compile pdf documentation by running <code>make</code> in <code>latex</code> directory</li>
 <li>Class list can be seen <a href="https://satu0king.github.io/Github-Documentation-With-Doxygen/annotated.html">here</a></li>
 </ul>
