@@ -2,8 +2,13 @@
 
 Automatically deploy your documentation of your project without any CI pipelines. This is achieved by using github actions along with github pages.
 
+Doxygen with auto deployment has been setup in this repository. The documentation for this repository is available at https://satu0king.github.io/Github-Documentation-With-Doxygen/
+
 ## Doxygen - Documentation Setup
 Skip this if you already have doxygen configured 
+* Install `doxygen`
+    * macOS - `brew install doxygen`
+    * Ubuntu - `sudo apt-get install -y doxygen`
 * Create doxygen config file (Doxyfile). Run `doxygen -g`
 * Configure `Doxyfile`
     * Set `RECURSIVE` to true
