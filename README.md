@@ -1,7 +1,8 @@
 # Github-Documentation-With-Doxygen
 
 ## Doxygen - Documentation Setup
-Skip this if you already have doxygen configured 
+> Skip this section if you already have doxygen configured 
+
 * Create doxygen config file (Doxyfile). Run `doxygen -g`
 * Configure `Doxyfile`
     * Set `RECURSIVE` to true
@@ -25,3 +26,5 @@ Skip this if you already have doxygen configured
 
 ## Notes
 * Ensure that `publish_dir` in `main.yml` is set correctly
+
+* TEST
