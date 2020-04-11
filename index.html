@@ -66,9 +66,15 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><p>Automatically deploy your documentation of your project without any CI pipelines. This is achieved by using github actions along with github pages.</p>
+<p>Doxygen with auto deployment has been setup in this repository. The documentation for this repository is available at <a href="https://satu0king.github.io/Github-Documentation-With-Doxygen/">https://satu0king.github.io/Github-Documentation-With-Doxygen/</a></p>
 <h1><a class="anchor" id="autotoc_md1"></a>
 Doxygen - Documentation Setup</h1>
 <p>Skip this if you already have doxygen configured</p><ul>
+<li>Install <code>doxygen</code><ul>
+<li>macOS - <code>brew install doxygen</code></li>
+<li>Ubuntu - <code>sudo apt-get install -y doxygen</code></li>
+</ul>
+</li>
 <li>Create doxygen config file (Doxyfile). Run <code>doxygen -g</code></li>
 <li>Configure <code>Doxyfile</code><ul>
 <li>Set <code>RECURSIVE</code> to true</li>
